@@ -1,13 +1,10 @@
 #!/bin/bash
 
 case "${1}" in
- start)
-	 echo "Execute Start"
+ start|finish)
+	 echo "Execute Start or finish"
 	 ;;
- finish)
-	 echo "Execute Finish"
-	 ;;
- restart)
+ rest*)
 	 echo "Execute Restart"
 	 ;;
  *)
