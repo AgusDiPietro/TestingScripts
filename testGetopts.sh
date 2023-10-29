@@ -1,10 +1,11 @@
 #!/bin/bash
 
-while getopts "ab" FLAG
+while getopts "a:b" FLAG
 do
    case "${FLAG}" in
      a)
 	  echo "Option '-a' in script"
+	  echo " ${OPTARG} "
 	  ;;
      b) 
 	  echo "Option '-b' in script"
